@@ -41,7 +41,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-state="JCUTheme">
 					<h1>Why JCU?</h1>
 					<h3 style="line-height:50px">Getting to Know Us</h3>
 					<p>
@@ -53,12 +53,12 @@
 					</section>
 
 
-				<section data-background-video="20190410_101309.mp4,20190410_101309.webm">
+				<section data-state="JCUTheme" data-background-video="20190410_101309.mp4,20190410_101309.webm">
 						<h2>James Cook University</h2>
 						<p class="fragment grow">is the only Australian institution in Singapore with University status.</p>
 					</section>
 			<!-- James Cook Explanation -->
-				<section>
+				<section data-state="JCUTheme">
 					<h2>James Cook?</h2>
 					<p style="display: inline-block;" class="fragment fade-up">The university is named after Captain James Cook</p>
 					<p style="display: inline-block;" class="fragment fade-up">British explorer who charted the Eastern Seaboard of Australia in 1770s</p>
@@ -98,19 +98,19 @@
     <img src="sqcstar.jpg" alt="SQC Star" style="width:100%">
 </div>
 				</section>
-				<section>
+				<section data-state="JCUTheme">
 					<h2>Why JCU</h2>
 					<p class="fragment">Top 2% Worldwide</p>
 					<p><span class="fragment">Lecturers with PhDs</span> <span class="fragment">and Industry Experience</span></p>
 					<p class="fragment">Learning modes to suit your needs</p>
 					<p class="fragment">Authentic learning pedagogy</p>
 				</section>
-				<section>
+				<section data-state="JCUTheme">
 					<h2>3 Campuses</h2>
 					<img src="3campuses.jpg" alt="3 campuses" style="width:65%">
 				</section>
 				<!-- No Difference in Certificate -->
-<section>
+<section data-state="JCUTheme">
 	<h3>No Difference</h3>
 <style>
 * {
@@ -138,12 +138,12 @@
     <img src="transcript.jpg" alt="JCU Transcript" style="width:70%">
 </div>
 				</section>
-			<section>
+			<section data-state="JCUTheme">
 			<h1>Industry Relevant Academics</h1>
 			</section>
 
 			<!-- Books -->
-			<section>
+			<section data-state="JCUTheme">
 			<h3>Books by Our Academics</h3>
 			<style>
 * {
@@ -201,26 +201,26 @@
 			</div>
 				</section>
 
-				<section>
+				<section data-state="JCUTheme">
 				<h3>Speaking Engagements</h3>
 				<img src="Speaking_Adrian.jpg" alt="Conference Adrian" style="width:60%">
 				<br>Conference on Nano-Micromaterials for Circular Economy and Sustainability in the East Asia Pacific</br>
 				</section>
-				<section>
+				<section data-state="JCUTheme">
 				<h3>Speaking Engagements</h3>
 				<img src="Speaking_Kathleen.jpg" alt="AustCham Kathleen" style="width:60%">
 				<p>Singapore 30 by 30 Food Security Business Panel Discussion</p>
 				</section>
 
 			<!-- Career Services and Student Life -->
-			<section>
+			<section data-state="JCUTheme">
 			<h1>Career Services</h1>
 			<h3>and</h3>
 			<h1>Student Life</h1>
 			</section>
 
 			<!-- Career Services -->
-			<section>
+			<section data-state="JCUTheme">
 			<h3>Career Services</h3>
 			<style>
 * {
@@ -249,7 +249,7 @@
 			</div>
 				</section>
 
-				<section>
+				<section data-state="JCUTheme">
 				<h3>Career Services</h3>
 				<img src="Career_JobFair.jpg" alt="Job Fair" style="width:100%">
 				</section>
@@ -260,7 +260,7 @@
 				</section>
 
 			<!-- Academic Information -->
-			<section>
+			<section data-state="JCUTheme">
 			<h1>Academic Information</h1>
 			</section>
 			<section>
@@ -268,14 +268,14 @@
 				<img src="CourseInfo.png" alt="Courses Offered" style="width:80%">
 			</section>
 				<!-- Ample break time -->				
-				<section>
+				<section data-state="JCUTheme">
 				<h3>Trimester System</h3>
 				<img src="Trimester.png" alt="Trimester System" style="width:90%">
 				</section>
-				<section>
+				<section data-state="JCUTheme">
 				<h2>But... don't worry!</h2>
 				</section>
-				<section>
+				<section data-state="JCUTheme">
 					<h2>Ample Break Time</h2>
 					<p>Students will have a:</p>
 					<p><span class="fragment highlight-green">1 week</span> break every 5 weeks</p>
@@ -284,7 +284,7 @@
 				</section>
 
 				<!-- Question Time -->
-				<section data-background="questions.gif">
+				<section data-state="JCUTheme" data-background="questions.gif">
 						<h2>Questions?</h2>
 				</section>
 
@@ -318,6 +318,10 @@
 
 			Reveal.addEventListener( 'brightvideo', function() {
     		document.getElementById('theme').setAttribute('href','css/theme/black.css'); 
+			}, false );
+
+			Reveal.addEventListener( 'JCUTheme', function() {
+    		document.getElementById('theme').setAttribute('href','css/theme/JCU.css'); 
 			}, false );
 
 		</script>
