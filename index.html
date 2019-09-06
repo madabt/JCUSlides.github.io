@@ -49,7 +49,7 @@
 					</p>
 				</section>
 
-					<section data-background-video="JCUExperience.mp4,JCUExperience.webm"  data-background-color="#000000">
+					<section data-state="brightvideo" data-background-video="JCUExperience.mp4,JCUExperience.webm"  data-background-color="#000000">
 					</section>
 
 
@@ -107,7 +107,7 @@
 				</section>
 				<section>
 					<h2>3 Campuses</h2>
-					<img src="3campuses.JPG" alt="3 campuses" style="width:65%">
+					<img src="3campuses.jpg" alt="3 campuses" style="width:65%">
 				</section>
 				<!-- No Difference in Certificate -->
 <section>
@@ -132,10 +132,10 @@
 </style>
 <div class="row">
   <div class="column">
-    <img src="certificate.JPG" alt="JCU Certificate" style="width:70%">
+    <img src="certificate.jpg" alt="JCU Certificate" style="width:70%">
   </div>
   <div class="column">
-    <img src="transcript.JPG" alt="JCU Transcript" style="width:70%">
+    <img src="transcript.jpg" alt="JCU Transcript" style="width:70%">
 </div>
 				</section>
 			<section>
@@ -165,7 +165,7 @@
 			</style>
 			<div class="row">
   			<div class="column">
-   			 <img src="Thiru.JPG" alt="Thiru" style="width:65%">
+   			 <img src="Thiru.jpg" alt="Thiru" style="width:65%">
   			</div>
   			<div class="column">
    			<img src="LouisePhillips.png" alt="LouisePhillips" style="width:65%">
@@ -194,10 +194,10 @@
 			</style>
 			<div class="row">
   			<div class="column">
-   			 <img src="Roberto.JPG" alt="Roberto" style="width:65%">
+   			 <img src="Roberto.jpg" alt="Roberto" style="width:65%">
   			</div>
   			<div class="column">
-   			<img src="Roberto1.JPG" alt="Roberto1" style="width:65%">
+   			<img src="Roberto1.jpg" alt="Roberto1" style="width:65%">
 			</div>
 				</section>
 
@@ -245,7 +245,7 @@
    			 <img src="Career_ResumeWriting.jpg" alt="Resume Writing" style="width:100%">
   			</div>
   			<div class="column">
-   			<img src="Career_Internship.JPG" alt="Internship Japan" style="width:100%">
+   			<img src="Career_Internship.jpg" alt="Internship Japan" style="width:100%">
 			</div>
 				</section>
 
@@ -315,6 +315,10 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
+			Reveal.addEventListener( 'brightvideo', function() {
+    		document.getElementById('theme').setAttribute('href','css/theme/black.css'); 
+			}, false );
 
 		</script>
 
