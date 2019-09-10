@@ -56,19 +56,24 @@
 	<body>
 
 <div class="fb-customerchat"
-page_id="116836749696871" minimzed="false">
+page_id="116836749696871" minimized="false">
 </div>
 
 <style>
-  #fb-root > div.fb_dialog.fb_dialog_advanced.fb_shrink_active {
-     right: initial !important;
-     left: 18pt;
-     z-index: 9999999 !important;
-  }
-  .fb-customerchat.fb_invisible_flow.fb_iframe_widget iframe {
-     right: initial !important;
-     left: 18pt !important;
-  }
+#fb-root > div.fb_dialog.fb_dialog_advanced {
+right: initial !important;
+left: 18pt;
+z-index: 9999999 !important;
+}
+#fb-root > div.fb_dialog.fb_dialog_mobile {
+right: initial !important;
+left: 18pt;
+z-index: 9999999 !important;
+}
+.fb-customerchat.fb_invisible_flow.fb_iframe_widget:not(.fb_iframe_widget_fluid) iframe {
+right: initial !important;
+left: 18pt !important;
+}
 </style>
 		<script>
   var div = document.createElement('div');
