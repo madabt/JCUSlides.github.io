@@ -31,6 +31,9 @@ body {
   line-height: 1.3;
   font-weight: inherit; }
 
+.fbmessenger {
+  align-items: left;}
+
 /*********************************************
  * HEADERS
  *********************************************/
