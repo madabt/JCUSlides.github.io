@@ -184,7 +184,28 @@ right: 38pt !important;
 					<h2>3 Campuses</h2>
 					<img src="3campuses.JPG" alt="3 campuses" style="width:65%" />
 				</section>
-				<!-- No Difference in Certificate -->
+
+			<!-- Academic Information -->
+			<section data-state="JCUTheme">
+			<h1>Academic Information</h1>
+			</section>
+				<!-- Ample break time -->				
+				<section data-state="JCUTheme">
+				<h3>Trimester System</h3>
+				<img src="Trimester.png" alt="Trimester System" style="width:90%">
+				</section>
+				<section data-state="JCUTheme">
+				<h2>But... don't worry!</h2>
+				</section>
+				<section data-state="JCUTheme">
+					<h2>Ample Break Time</h2>
+					<p>Students will have a:</p>
+					<p><span class="fragment highlight-green">1 week</span> break every 5 weeks</p>
+					<p><span class="fragment highlight-green">2 week</span> exam break</p>
+					<p><span class="fragment highlight-green">3 week</span> holiday break</p>
+				</section>
+
+			<!-- No Difference in Certificate -->
 <section data-state="JCUTheme">
 	<h3>No Difference</h3>
 <style>
@@ -213,6 +234,29 @@ right: 38pt !important;
     <img src="transcript.JPG" alt="JCU Transcript" style="width:70%" />
 </div>
 				</section>
+
+			<section>
+				<h3>Specializations</h3>
+				<img src="CourseInfo.png" alt="Courses Offered" style="width:80%">
+			</section>
+
+			<section data-state="JCU_leftalign">
+				<h3>Academic Entry Points</h3>
+				
+				<h5>Pre-University Foundation Program</h5>
+				<p>GCE 'O' Levels <br/>
+				IB Middle Year Program
+				</p>
+				<h5>Diploma of Higher Education</h5>
+				<p>GCE 'A' Levels (below direct entry)<br/>
+				High School Diploma w/o IB
+				</p>
+				<h5>Direct Degree Entry</h5>
+				<p>GCE 'A' Levels<br/>
+				International Baccalaureate
+				</p>
+			</section>
+
 			<section data-state="JCUTheme">
 			<h1>Industry Relevant Academics</h1>
 			</section>
@@ -334,30 +378,6 @@ right: 38pt !important;
 				<img src="StudentLife.png" alt="Student Life" style="width:100%">
 				</section>
 
-			<!-- Academic Information -->
-			<section data-state="JCUTheme">
-			<h1>Academic Information</h1>
-			</section>
-			<section>
-				<h3>Specializations</h3>
-				<img src="CourseInfo.png" alt="Courses Offered" style="width:80%">
-			</section>
-				<!-- Ample break time -->				
-				<section data-state="JCUTheme">
-				<h3>Trimester System</h3>
-				<img src="Trimester.png" alt="Trimester System" style="width:90%">
-				</section>
-				<section data-state="JCUTheme">
-				<h2>But... don't worry!</h2>
-				</section>
-				<section data-state="JCUTheme">
-					<h2>Ample Break Time</h2>
-					<p>Students will have a:</p>
-					<p><span class="fragment highlight-green">1 week</span> break every 5 weeks</p>
-					<p><span class="fragment highlight-green">2 week</span> exam break</p>
-					<p><span class="fragment highlight-green">3 week</span> holiday break</p>
-				</section>
-
 				<!-- Question Time -->
 				<section data-state="JCUTheme" data-background="questions.gif">
 						<h2>Questions?</h2>
@@ -397,6 +417,10 @@ right: 38pt !important;
 
 			Reveal.addEventListener( 'JCUTheme', function() {
     		document.getElementById('theme').setAttribute('href','css/theme/JCU.css'); 
+			}, false );
+
+			Reveal.addEventListener( 'JCU_leftalign', function() {
+    		document.getElementById('theme').setAttribute('href','css/theme/JCU_leftalign.css'); 
 			}, false );
 
 		</script>
